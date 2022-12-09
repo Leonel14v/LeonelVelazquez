@@ -86,6 +86,20 @@ body{
     margin-left: 30px;
     margin-top: 60px;
 }
+@media  screen and (max-width:800px) {
+    .container_primera_pagina p {
+        font-size: 20px;
+        margin-top: 470px;
+        margin-left: -700px;
+    }
+    .container_primera_pagina img {
+        margin-left: 50px;
+    }
+    .menuinicio {
+        margin-left: 100px;
+    }
+}
+
 /*PAGINA MANGAKA*/
 .imagen_portada {
     background-image: url(./imagenes/manga_black_clover_retorna_hiato__rjpacn2-1210x544.webp);
