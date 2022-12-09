@@ -1,0 +1,157 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+@font-face {
+    font-family: "rubik";
+    src: url(./tipografia/RubikGlitch-Regular.ttf);
+}
+@font-face {
+    font-family:"unlock";
+    src: url(./tipografia/Unlock-Regular.ttf);
+}
+.menuinicio {
+    display:flex;
+    align-items: center;
+    justify-content: start;
+    background: rgb(38,36,36);
+    background: linear-gradient(90deg, rgba(38,36,36,1) 94%, rgba(47,41,41,1) 99%, rgba(122,111,111,1) 100%, rgba(39,36,36,1) 100%, rgba(112,101,101,1) 100%, rgba(129,117,117,1) 100%);
+    padding-bottom: 10px;
+}
+.menuinicio__navegacion a{
+    text-decoration: none;
+    color: #D1E3FF;
+    font-family: "rubik"; 
+}
+.menuinicio__navegacion  ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding-top: 28px;
+}
+.menuinicio__navegacion li {
+    padding: 0 15px;
+} 
+body{
+    background-color: rgba(38,36,36,1);
+}
+/* IMAGENES DE PORTADA CON ANIMACION*/
+.imagenesdeportada {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+.imagenesdeportada ul {
+    padding: 0;
+    display: flex;
+    width: 300%;
+    animation: movimiento 20s infinite alternate;
+    animation-timing-function: ease-in;
+}
+.imagenesdeportada li {
+    list-style: none;
+    width: 100%;
+}
+.imagenesdeportada img {
+    width: 100%;
+    height: 600px;
+    border-radius: 20px;
+}
+@keyframes movimiento {
+   0% {margin-left: 0;}
+   20% {margin-left: 0;}
+   
+   25% {margin-left: -100%;}
+   45% {margin-left: -100%;}
+
+   50% {margin-left: -200%;}
+   70% {margin-left: -200%;}
+}
+.container_primera_pagina {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.container_primera_pagina p{
+    color:white;
+    font-family: "unlock";
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 150px;
+}
+.container_primera_pagina img {
+    border-radius: 30px;
+    width: 680px;
+    margin-left: 30px;
+    margin-top: 60px;
+}
+/*PAGINA MANGAKA*/
+.imagen_portada {
+    background-image: url(./imagenes/manga_black_clover_retorna_hiato__rjpacn2-1210x544.webp);
+    padding: 255px;
+    background-size: auto;
+    background-attachment: fixed;
+}
+.informacion_mangaka h1{
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    font-family: "unlock";
+}
+.informacion_mangaka_img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.informacion_mangaka p {
+    color: white;
+    font-family: "unlock";
+    font-size: 20px;
+    margin-top: 120px;
+    margin-left: 10px;
+}
+.informacion_mangaka_img img {
+    width: 600px;
+    margin-top: 50px;
+    border-radius: 40px;
+}
+/*pagina mangaka*/
+/*PAGINA HISTORIA*/
+.informacion_blackClover h1{
+    color: white;
+    font-family: "unlock";
+    text-align: center;
+    font-size: 60px;
+}
+.informacion_blackClover p {
+    color: white;
+    font-family: "unlock";
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.informacion_blackClover iframe {
+    margin-left: 350px;
+    margin-top: 35px;
+    border-radius: 40px;
+}
+.informacion_blackClover img {
+    width: 560px;
+    margin-left: 350px ;
+    margin-top: 5px;
+    border-radius: 40px;
+}
+/*pagina historia*/
+/*PAGINA CANCIONES*/
+.openings_black {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.openings_black iframe{ 
+    margin-left: 40px;
+    margin-top: 50px;
+    border-radius: 40px;
+}
+
